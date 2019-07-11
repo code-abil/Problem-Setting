@@ -1,2 +1,2 @@
 # Problem-Setting
-For , colloborating with other problem_setters and coming up with qaulity problems.
+Colloborating with other problem_setters and coming up with quality problems.
