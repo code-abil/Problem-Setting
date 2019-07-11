@@ -1,0 +1,38 @@
+Problem Statement:
+Keteki Country has N cities (numbered 1,2,3,...,N) and N-1 bidirectional roads.We can reach any city in
+the Keteki Country from the current city.City 1 is the capital of Keteki Country.As the distance from 
+a city to the Capital City increases, the quantity of vegetables decreases.
+
+Kohli takes Anushka for a tour to Keteki Country.As we all know that Anushka recently turned into 
+a vegetarian,she doesnt like to travel to a city having less vegetables than the current city.
+Also,she would only visit cities which are at a distance of D from the current city.
+
+There are Q Queries, each query has the current city Ci and Distance Di.Kohli wants to know the maximum
+number of cities,he can take her.
+
+Input:
+The first line of the input contains 2 space-separated integers N and Q denoting the number of cities and 
+the number of queries.
+It is followed by N-1 lines with each line containing two space separated integers indicating an road
+between two cities.
+It is followed by Q lines, where each line has two space separated integers C and D,denoting the current
+city of the couple and the distance D respectively.
+
+Output:
+For each query, output the maximum number of cities the couple can visit.
+
+Constraints:
+1<= N,Q <=10^5
+1<= C,D <=N
+
+Sample Input:
+3 2
+1 2
+1 3
+1 1
+2 1
+
+Sample Output:
+2
+1
+
