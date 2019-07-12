@@ -1,9 +1,14 @@
 Problem Statement:-
-Keteki Country has N cities (numbered 1,2,3,...,N) and N-1 bidirectional roads.A road from x to y means that we can travel from City x to City y and vice-versa.City 1 is the capital of Keteki Country.As the distance of a city from the Capital City increases, the quantity of vegetables increases.
+Keteki Country has N cities (numbered 1,2,3,...,N) and N-1 bidirectional roads.A road from x to y means that we can travel from 
+City x to City y and vice-versa.City 1 is the capital of Keteki Country.As the distance of a city from the Capital City increases,
+the quantity of vegetables increases.
 
-Kohli takes Anushka for a tour to Keteki Country.As we all know that Anushka recently turned into a vegetarian,she can go to city y from city x,only if city y has more vegetables than the current city.Also,she would only visit cities which are at a distance of D from the current city.
+Kohli takes Anushka for a tour to Keteki Country.As we all know that Anushka recently turned into a vegetarian,
+she can go to city y from city x,only if city y has more vegetables than the current city.Also,she would only visit cities
+which are at a distance of D from the current city.
 
-There are Q Queries, each query has the current city Ci and Distance Di.Kohli wants to know the maximum number of cities,he can take her.
+There are Q Queries, each query has the current city Ci and Distance Di.Kohli wants to know the maximum number of cities,
+he can take her.
 
 Input:
 The first line of the input contains 2 space-separated integers N and Q denoting the number of cities and 
