@@ -1,0 +1,37 @@
+You are given a sequence of length n, A = a1, a2, ..., an. 
+You get a new sequence B of n numbers from A by the following relation:
+B[i] = Product of all numbers of A except A[i]
+Let C[i] = Number of unique factors of B[i]
+You are asked to print the sum of all elements of C modulo 10^9 + 7.
+
+
+Input:
+- The first line of input contains a single integer n.
+- The second line of input contains n space separated integers a1, a2,..., an.
+
+
+Output:
+Print a single integer - the sum of all elements of C modulo 10^9 + 7.
+
+
+Constraints:
+- 2 <= n <= 10^5
+- 1 <= A[i] <= 10^5 for each valid i
+
+
+Example Input:
+3
+5 6 4
+
+
+Example Output:
+22
+
+
+Sample Explanation:
+Array B: {24, 20, 30}
+24 has 8 factors: {1, 2, 3, 4, 6, 8, 12, 24}
+20 has 6 factors: {1, 2, 4, 5, 10, 20}
+30 has 8 factors: {1, 2, 3, 5, 6, 10, 15, 30}
+So, Array C: {8, 6, 8}
+Hence, the answer is = 8 + 6 + 8 = 22
