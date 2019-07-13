@@ -58,9 +58,9 @@ void test_case() {
   int vasya = 0, petya = 0;
   for (int i = n, done = 0; i >= 1; --i, ++done) {
     if (done & 1) {
-      vasya += C[i];
-    } else {
       petya += C[i];
+    } else {
+      vasya += C[i];
     }
   }
   if (vasya > petya) {
