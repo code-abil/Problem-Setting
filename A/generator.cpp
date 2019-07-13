@@ -47,29 +47,20 @@ void debug_out(Head H, Tail... T) {
 #define debug(...) 42
 #endif
 
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+int get_rand(int l, int r) {
+	uniform_int_distribution<int> uid(l, r);
+	return uid(rng);
+}
+
 void test_case() {
-  int n;
-  cin >> n;
-  vector<int> C(n + 1);
-  for (int i = 1; i <= n; ++i) {
-    cin >> C[i];
+  int n = get_rand(1, 1e5);
+  cout << n << "\n";
+  while (n--) {
+    cout << get_rand(1, 1e3) << " ";
   }
-  sort(C.begin() + 1, C.end());
-  int vasya = 0, petya = 0;
-  for (int i = n, done = 0; i >= 1; --i, ++done) {
-    if (done & 1) {
-      petya += C[i];
-    } else {
-      vasya += C[i];
-    }
-  }
-  if (vasya > petya) {
-    cout << "Vasya\n";
-  } else if (petya > vasya) {
-    cout << "Petya\n";
-  } else {
-    cout << "Tie\n";
-  }
+  cout << "\n";
 }
 
 int main() {

@@ -1,0 +1,40 @@
+Chef saw Ketu and Petu playing the following game.
+- There are n cards placed on a table with each card having a value on it.
+- Both of them take their turn alternately with Petu starting the game.
+- Petu draws card from the front of the remaining cards.
+- Ketu draws card from the back of the remaining cards.
+- Both of them gain value written on the card they drew.
+- When there is no card remaining, the game ends.
+Chef was wondering what will be difference in points earned by Ketu and Petu?
+
+
+Input:
+- The first line of input contains a single number n.
+- The second line of input contains n space seperated integers C1, C2, ..., Cn.
+
+
+Output:
+Print a single integer, Ketu's points - Petu's points
+
+
+Constraints:
+- 1 <= n <= 10^5
+- 1 <= C[i] <= 10^3 for each valid i
+
+
+Example Input:
+3
+1 4 10
+
+
+Example Output:
+5
+
+
+Sample Explanation:
+Let K be points of Ketu and P be points of Petu.
+- Initially, K = 0 and P = 0.
+- Petu draws card with value 1 and gains 1 points. So, P = 0 + 1 = 1.
+- Ketu draws card with value 10 and gains 10 points. So, K = 0 + 10 = 10.
+- Petu draws card with value 4 and gains 4 points. So, P = 1 + 4 = 5.
+Hence, the value of K - P = 10 - 5 = 5.
